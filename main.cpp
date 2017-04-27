@@ -18,7 +18,7 @@ using namespace std;
 
 /*int main()
 {
-    cout<<"F°"<<"    "<<"C°"<<endl;
+    cout<<"FÂ°"<<"    "<<"CÂ°"<<endl;
     float f,c;
     int a=0;
     for(f=0;f<=300;f=f+20){
@@ -184,6 +184,21 @@ void insertionSort(int arr[], int length) {
       }
 }*/
 
-//10
 
+//14
+int suma(int a[],int n)
+{
+
+    if (n==1){
+        return a[0];
+    }
+    else{
+        return a[n-1]+suma(a,n-1);
+    }
+}
+int main()
+{
+    int a[3]={1,2,3};
+    cout<<suma(a,3);
+}
 //15
